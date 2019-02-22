@@ -3,19 +3,27 @@ using System;
 
 public class Main : Node
 {
-    var padSize
-    var direction = new Vector2(1.0, 0.0)
-       
+    Vector2 ScreenSize;
+
+    Vector2 padSize;
+
+
     public override void _Ready()
     {
-        _screenSize = GetViewport().GetSize();
-        padSize = GetNode("Pad").GetTexture().GetSize();
+        ScreenSize = GetViewport().GetSize();
+        padSize = ((Sprite)(GetNode("Pad").GetNode("Sprite"))).GetTexture().GetSize();
+        this.SetProcess(true);
     }
 
-//    public override void _Process(float delta)
-//    {
-//        // Called every frame. Delta is time since last frame.
-//        // Update game logic here.
-//        
-//    }
+    public override void _Process(float delta)
+    {
+        Ball ballNode = (Ball)GetNode("Ball");
+        Vector2 ballPos = ((Node2D)GetNode("Ball")).Position;
+        Rect2 topPad = new Rect2( ((Node2D)GetNode("Pad")).Position - padSize*0.5f, padSize );
+        Rect2 bottomPad = new Rect2( ((Node2D)GetNode("Pad2")).Position - padSize*0.5f, padSize );
+
+        Vector2 ballDirection = ((Ball)GetNode("Ball")).direction;
+
+        
+    }
 }

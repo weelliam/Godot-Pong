@@ -1,0 +1,6 @@
+/home/wpetit/projects/Godot/Pong/.mono/temp/bin/Tools/Pong.dll
+/home/wpetit/projects/Godot/Pong/.mono/temp/bin/Tools/Pong.pdb
+/home/wpetit/projects/Godot/Pong/.mono/temp/obj/Tools/Pong.csprojAssemblyReference.cache
+/home/wpetit/projects/Godot/Pong/.mono/temp/obj/Tools/Pong.csproj.CoreCompileInputs.cache
+/home/wpetit/projects/Godot/Pong/.mono/temp/obj/Tools/Pong.dll
+/home/wpetit/projects/Godot/Pong/.mono/temp/obj/Tools/Pong.pdb
