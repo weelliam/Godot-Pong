@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://main/scene/Main.cs" type="Script" id=1]
+[ext_resource path="res://assets/separator.png" type="Texture" id=2]
+[ext_resource path="res://main/scene/Pad_top.tscn" type="PackedScene" id=3]
+[ext_resource path="res://main/scene/Pad_bottom.tscn" type="PackedScene" id=4]
+[ext_resource path="res://main/scene/Ball.tscn" type="PackedScene" id=5]
+
+[node name="Main" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Separator" type="Sprite" parent="." index="0"]
+
+position = Vector2( 540, 970 )
+scale = Vector2( 2.7, 3 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Pad" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="Pad2" parent="." index="2" instance=ExtResource( 4 )]
+
+[node name="Ball" parent="." index="3" instance=ExtResource( 5 )]
+
+
